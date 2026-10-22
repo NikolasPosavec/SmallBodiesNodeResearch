@@ -1,0 +1,12 @@
+nrays 20000
+max_scattering 200
+killswitch_start 70
+nbins 180
+I_cutoff_limit 0.0000001
+seed 0
+wavelen 6.283185307179586
+mesh_scale 20
+mesh siris-output.off
+force_interaction 1
+beam_radius -1
+material1 1.308 1.43e-08 1 1.0 0.946029056271191 outputS.out 1 ~/dists/cdfconstant04dist.txt
