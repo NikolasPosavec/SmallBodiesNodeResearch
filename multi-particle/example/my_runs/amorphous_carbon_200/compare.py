@@ -28,11 +28,11 @@ print(pol_danielle[np.nanargmax(pol_danielle)])
 # plot the data
 fig, axes = plt.subplots(2,1)
 
-axes[0].plot(angle_nick, s11_nick, label="nick")
-axes[0].plot(angle_danielle, s11_danielle, label="danielle")
+axes[0].plot(angle_nick, s11_nick, label="Nick (20,000 rays)")
+axes[0].plot(angle_danielle, s11_danielle, label="Danielle (100,000 rays)")
 
-axes[1].plot(angle_nick, pol_nick, label="nick")
-axes[1].plot(angle_danielle, pol_danielle, label="danielle")
+axes[1].plot(angle_nick, pol_nick, label="Nick (20,000 rays)")
+axes[1].plot(angle_danielle, pol_danielle, label="Danielle (100,000 rays)")
 
 axes[0].set_yscale("log")
 
