@@ -1,5 +1,5 @@
 import numpy as np 
-import pyplot.matplotlib as plt
+import matplotlib.pyplot as plt
 
 # nick's file
 nick = np.loadtxt("outputS.out")
@@ -21,4 +21,29 @@ pol_nick = (-s12_nick) / s11_nick
 # compute polarization from danielle's data
 pol_danielle = (-s12_danielle) / s11_danielle
 
-print(pol_nick[11])
+# finding where the polarization peaks
+print(pol_nick[np.nanargmax(pol_nick)])
+print(pol_danielle[np.nanargmax(pol_danielle)])
+
+# plot the data
+fig, axes = plt.subplots(2,1)
+
+axes[0].plot(angle_nick, s11_nick, label="nick")
+axes[0].plot(angle_danielle, s11_danielle, label="danielle")
+
+axes[1].plot(angle_nick, pol_nick, label="nick")
+axes[1].plot(angle_danielle, pol_danielle, label="danielle")
+
+axes[0].set_yscale("log")
+
+axes[0].set_xlabel("Scattering angle (deg)")
+axes[0].set_ylabel("S11")
+axes[1].set_xlabel("Scattering angle (deg)")
+axes[1].set_ylabel("-S12/S11")
+
+axes[0].legend()
+axes[1].legend()
+plt.tight_layout()
+plt.savefig("comparison.png", dpi=150)
+plt.show()
+
