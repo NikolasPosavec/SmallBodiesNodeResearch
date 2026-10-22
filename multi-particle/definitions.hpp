@@ -16,6 +16,8 @@
 #include <CGAL/Surface_mesh.h>
 #include <CGAL/Polyhedron_3.h>
 #include <string>
+#include <optional>
+#include <variant>
 #include <boost/math/constants/constants.hpp>
 
 
@@ -39,8 +41,9 @@ typedef CGAL::AABB_triangle_primitive<K, Iterator> Primitive;
 typedef CGAL::AABB_traits<K, Primitive> Traits;
 typedef CGAL::AABB_tree<Traits> Tree;
 
-typedef boost::optional<Tree::Intersection_and_primitive_id<Ray>::Type> Ray_intersection;
-typedef boost::optional<Tree::Intersection_and_primitive_id<Line>::Type> Line_intersection;
+// CGAL 6 returns std::optional/std::variant (was boost::optional/boost::variant before CGAL 6)
+typedef std::optional<Tree::Intersection_and_primitive_id<Ray>::Type> Ray_intersection;
+typedef std::optional<Tree::Intersection_and_primitive_id<Line>::Type> Line_intersection;
 
 typedef Tree::Primitive_id AABB_primitive_id;
 typedef CGAL::Polyhedron_3<K> Polyhedron;

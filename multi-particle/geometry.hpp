@@ -53,7 +53,7 @@ class Geometry{
             //double* AA = stack_diffuse.back().K;
             if(intersection){
                 stack_diffuse.back().property = RAYPROPERTY::SCATTERED;
-                const Point* p =  boost::get<Point>(&(intersection->first));
+                const Point* p =  std::get_if<Point>(&(intersection->first));
                 stack_diffuse.back().primitive = intersection->second;
                 Vector3 v = CGAL::normal(intersection->second->vertex(0),
                                          intersection->second->vertex(1), 
@@ -83,7 +83,7 @@ class Geometry{
             //std::cout << stack.back().F[0] << ", " << stack.back().F[1] << ", " << stack.back().F[2] << std::endl;
             //std::cout << stack.back().K[0] << ", " << stack.back().K[1] << ", " << stack.back().K[2] << std::endl;
             if (intersection){
-                const Point* p =  boost::get<Point>(&(intersection->first));
+                const Point* p =  std::get_if<Point>(&(intersection->first));
 
                 stack.back().primitive = intersection->second;
 

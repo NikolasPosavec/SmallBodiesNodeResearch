@@ -19,9 +19,12 @@ FOPT += -Ofast -mtune=native
 #FOPT += -g -fbacktrace -ffpe-trap=invalid,zero,overflow,underflow
 ## C++
 ### Required options for C++
-COPT = -std=c++14 -Wno-narrowing
+COPT = -std=c++17 -Wno-narrowing
 ### Where are include's
 #COPT += -I/mingw64/include
+COPT += -I/opt/homebrew/include
+### Where are gfortran/quadmath runtime libraries (Homebrew gcc)
+LDOPT = -L/opt/homebrew/lib -L/opt/homebrew/lib/gcc/current
 #### For developing
 #COPT += -g
 #### Minor optimization
@@ -52,7 +55,7 @@ GS : directories siris4lib GS/GS-main.f
 	$(COMP) $(FOPT) -o GS/GS -J mod -L lib GS/GS-main.f -lsiris4
 
 multiparticle : directories siris4lib $(addprefix multi-particle/,$(addsuffix .o,$(MPCFILES))) $(addprefix multi-particle/,$(addsuffix .o,$(MPFFILES))) multi-particle/main.cpp
-	$(CPPCOMP) $(COPT) -o multi-particle/sirismp $(addprefix multi-particle/,$(addsuffix .o,$(MPCFILES))) $(addprefix multi-particle/,$(addsuffix .o,$(MPFFILES)))  multi-particle/main.cpp -L lib -lsiris4 -lgfortran -lquadmath
+	$(CPPCOMP) $(COPT) -o multi-particle/sirismp $(addprefix multi-particle/,$(addsuffix .o,$(MPCFILES))) $(addprefix multi-particle/,$(addsuffix .o,$(MPFFILES)))  multi-particle/main.cpp -L lib $(LDOPT) -lsiris4 -lgfortran -lquadmath $(shell $(COMP) -print-libgcc-file-name)
 
 siris4lib : directories lib/libsiris4.a
 	
