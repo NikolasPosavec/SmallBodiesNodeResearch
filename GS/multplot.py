@@ -89,6 +89,6 @@ if __name__ == "__main__":
         obj_files = ["model1.obj", "model2.obj", "model3.obj"]  # Replace with your OBJ file names
 
     # Optional: Offset each model in X direction to separate them visually
-    offsets = [(i * 10, 0, 0) for i in range(len(obj_files))]
+    offsets = [(i * 3, 0, 0) for i in range(len(obj_files))]
 
     plot_multiple_objs(obj_files, offsets=offsets)
