@@ -26,3 +26,8 @@ my_env/
 CMakeCache.txt
 .venv/
 __pycache__/
+sweeps/**/*.off
+sweeps/**/*.obj
+sweeps/**/diffuse_pmatrix.in
+sweeps/diffuse_pmatrix.in
+sweeps/sweep.log
