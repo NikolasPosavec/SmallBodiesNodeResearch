@@ -1,0 +1,40 @@
+{
+  "run": "n_particles_20",
+  "changed": {
+    "n_shapes": 20
+  },
+  "gs": {
+    "n_shapes": 20,
+    "seed": 1,
+    "sigma": 0.3,
+    "power_law": 4,
+    "l_min": 2,
+    "l_max": 10,
+    "rows_per_octant": 30
+  },
+  "sirismp_input": "nrays 100000\nmax_scattering 200\nkillswitch_start 70\nnbins 180\nI_cutoff_limit 0.0000001\nseed 12345\nwavelen 6.283185307179586\nmesh_scale 20\nmesh mesh.off\nforce_interaction 1\nbeam_radius -1\nmaterial1 1.85 0.00077 1 1.0 0.946029056271191 diffuse_pmatrix.in 1 ~/dists/cdfconstant04dist.txt\noutput_file outputS.out\npmatrix_out pmatrix.out\ndetails_out details.out\n",
+  "sirismp_seconds": {
+    "shape_01": 505.8,
+    "shape_02": 433.2,
+    "shape_03": 411.4,
+    "shape_04": 522.1,
+    "shape_05": 1337.2,
+    "shape_06": 387.4,
+    "shape_07": 559.7,
+    "shape_08": 567.9,
+    "shape_09": 338.6,
+    "shape_10": 585.8,
+    "shape_11": 653.2,
+    "shape_12": 598.6,
+    "shape_13": 635.2,
+    "shape_14": 338.7,
+    "shape_15": 534.2,
+    "shape_16": 410.2,
+    "shape_17": 307.3,
+    "shape_18": 393.2,
+    "shape_19": 354.7,
+    "shape_20": 335.6
+  },
+  "git_commit": "8acd7ddb",
+  "finished": "2026-10-29T04:06:47"
+}

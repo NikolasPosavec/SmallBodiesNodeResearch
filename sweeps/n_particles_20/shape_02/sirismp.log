@@ -1,0 +1,52 @@
+=READING INPUTS FROM: input.in=======================================================================
+seed = 12345
+Using seed: 12345
+mesh = mesh.off
+centralize was not given, using default value: 0
+=READ MESH FROM: mesh.off============================================================================
+n_vertices: 3602, n_faces: 7200
+=MESH READ SUCCESFULLY=========
+=MATERIALS===========================================================================================
+Material format: ref_real ref_imag diffuse_inclusions mean_free_path albedo fname
+Surrouding medium format: ref_real ref_imag 0
+media was not given, using default value: n=1+i0
+File does not exist
+material1 = n=1.8500000000000001+i0.00076999999999999996. Diffuse inclusion with distribution: a=0.94602905627119105, from=diffuse_pmatrix.in, distribution:~/dists/cdfconstant04dist.txt
+=CREATING DIFFUSE SCATTERERS===
+=====================================================================================================
+nbins = 180
+nbins_fine_details_start was not given, using default value: 180
+force_interaction = 1
+ignore_absorption was not given, using default value: 0
+prevent_TR was not given, using default value: 0
+max_scattering = 200
+I_cutoff_limit = 9.9999999999999995e-08
+killswitch_start = 70
+wavelen = 6.2831853071795862
+mesh_scale = 20
+beam_radius = -1
+=TRACER: INITIALIZE==================================================================================
+nrays = 100000
+check_time_after_nrays was not given, using default value: 10000
+allocated_time_in_hours was not given, using default value: 99999
+=TRACER: START=======================================================================================
+=TRACING: FINISHED===================================================================================
+output_file = outputS.out
+pmatrix_out = pmatrix.out
+details_out = details.out
+=OUTPUT==============================================================================================
+From: 100000 rays 76321 unhit 0 hit but not scattered
+Real_Area: 1696.3509955105087, Eff_area: 1696.3509955105087
+===============================
+Q_abs      : 0.10468491134554342
+Q_abs_diff : 6.7671059428965532e-07
+Q_sca      : 0.89527223083423413
+Q_stop     : 1.3011692505814633e-06
+Q_surf     : 4.0879940337946302e-05
+===============================
+Total      : 0.99999999999996037
+===============================
+Seed       : 12345
+Q_dt       : nan
+=SAVING OUTPUT=================
+=EXIT================================================================================================

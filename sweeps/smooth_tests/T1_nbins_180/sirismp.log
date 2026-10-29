@@ -1,0 +1,50 @@
+=READING INPUTS FROM: input.in=======================================================================
+seed = 12345
+Using seed: 12345
+mesh = mesh.off
+centralize was not given, using default value: 0
+=READ MESH FROM: mesh.off============================================================================
+n_vertices: 1892, n_faces: 3780
+=MESH READ SUCCESFULLY=========
+=MATERIALS===========================================================================================
+Material format: ref_real ref_imag diffuse_inclusions mean_free_path albedo fname
+Surrouding medium format: ref_real ref_imag 0
+media was not given, using default value: n=1+i0
+material1 = n=1.5+i0
+=====================================================================================================
+nbins = 180
+nbins_fine_details_start was not given, using default value: 180
+force_interaction = 1
+ignore_absorption was not given, using default value: 0
+prevent_TR was not given, using default value: 0
+max_scattering = 200
+I_cutoff_limit = 9.9999999999999995e-08
+killswitch_start = 70
+wavelen = 6.2831853071795862
+mesh_scale = 2000
+beam_radius = -1
+=TRACER: INITIALIZE==================================================================================
+nrays = 10000
+check_time_after_nrays was not given, using default value: 10000
+allocated_time_in_hours was not given, using default value: 99999
+=TRACER: START=======================================================================================
+=TRACING: FINISHED===================================================================================
+output_file = outputS.out
+pmatrix_out = pmatrix.out
+details_out = details.out
+=OUTPUT==============================================================================================
+From: 10000 rays 6744 unhit 0 hit but not scattered
+Real_Area: 12274811.305805219, Eff_area: 12274811.305805219
+===============================
+Q_abs      : 0
+Q_abs_diff : 0
+Q_sca      : 0.9975383925745831
+Q_stop     : 0.0024616074254253527
+Q_surf     : 0
+===============================
+Total      : 1.0000000000000084
+===============================
+Seed       : 12345
+Q_dt       : nan
+=SAVING OUTPUT=================
+=EXIT================================================================================================

@@ -1,0 +1,21 @@
+{
+  "run": "power_law_2",
+  "changed": {
+    "power_law": 2
+  },
+  "gs": {
+    "n_shapes": 1,
+    "seed": 1,
+    "sigma": 0.3,
+    "power_law": 2,
+    "l_min": 2,
+    "l_max": 10,
+    "rows_per_octant": 30
+  },
+  "sirismp_input": "nrays 100000\nmax_scattering 200\nkillswitch_start 70\nnbins 180\nI_cutoff_limit 0.0000001\nseed 12345\nwavelen 6.283185307179586\nmesh_scale 20\nmesh mesh.off\nforce_interaction 1\nbeam_radius -1\nmaterial1 1.85 0.00077 1 1.0 0.946029056271191 diffuse_pmatrix.in 1 ~/dists/cdfconstant04dist.txt\noutput_file outputS.out\npmatrix_out pmatrix.out\ndetails_out details.out\n",
+  "sirismp_seconds": {
+    "power_law_2": 862.6
+  },
+  "git_commit": "8acd7ddb",
+  "finished": "2026-10-29T00:39:38"
+}
