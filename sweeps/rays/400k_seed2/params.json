@@ -1,0 +1,28 @@
+{
+  "run": "400k_seed2",
+  "nrays": 400000,
+  "ray_seed": 12352,
+  "runtime_seconds": 2796.9,
+  "seconds_per_100k_rays": 699.2,
+  "started": "2026-11-09T22:40:05",
+  "finished": "2026-11-09T23:26:42",
+  "parallel_jobs_setting": 4,
+  "runs_in_progress_at_start": [
+    "400k_seed2",
+    "900k_seed1",
+    "900k_seed2",
+    "900k_seed3"
+  ],
+  "on_ac_power_at_start": true,
+  "on_ac_power_at_end": true,
+  "fixed_setup": {
+    "copied_from": "sweeps/baseline",
+    "gs": "sigma 0.3, power law 4, l_min 2, l_max 10, GS seed 1 (see GS-input.in)",
+    "material": "fayalite n = 1.85 + 0.00077i, mesh_scale 20, wavelen 2*pi (size parameter 20)",
+    "mesh_sha256": "dc7e1aefaa391c60b9c17df7c735fef77c624e51446138decbfa7e487f69f5c4"
+  },
+  "sirismp_input": "nrays 400000\nmax_scattering 200\nkillswitch_start 70\nnbins 180\nI_cutoff_limit 0.0000001\nseed 12352\nwavelen 6.283185307179586\nmesh_scale 20\nmesh mesh.off\nforce_interaction 1\nbeam_radius -1\nmaterial1 1.85 0.00077 1 1.0 0.946029056271191 diffuse_pmatrix.in 1 ~/dists/cdfconstant04dist.txt\noutput_file outputS.out\npmatrix_out pmatrix.out\ndetails_out details.out\n",
+  "sirismp_sha256": "03ecfd72d7f12a8bff1774204fb42ea5c4caa68687beefb80719de3c3300c418",
+  "machine": "dhcp-10-174-34-77.wireless.dyn.umd.edu arm64 macOS 26.6.2",
+  "git_commit": "589e7b87"
+}
