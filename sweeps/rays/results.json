@@ -1,0 +1,86 @@
+{
+  "1deg": {
+    "100k": {
+      "pol_noise": 0.015304920763631727,
+      "s11_rel_noise": 0.07402444543981665,
+      "runtime_min_mean": 12.26222222222222,
+      "runtime_min_range": [
+        11.585,
+        12.821666666666665
+      ],
+      "xcheck_pol_rms_mean_vs_900k": 0.010056350296547369,
+      "xcheck_pol_implied_single_run": 0.016759477482542466,
+      "xcheck_s11_rel_rms_mean_vs_900k": 0.03857213350201163,
+      "xcheck_s11_implied_single_run": 0.0627357939246921
+    },
+    "200k": {
+      "pol_noise": 0.011655657854812112,
+      "s11_rel_noise": 0.047404129777768866,
+      "runtime_min_mean": 25.24111111111111,
+      "runtime_min_range": [
+        24.16166666666667,
+        26.508333333333333
+      ],
+      "xcheck_pol_rms_mean_vs_900k": 0.006758118513286999,
+      "xcheck_pol_implied_single_run": 0.010700749466562628,
+      "xcheck_s11_rel_rms_mean_vs_900k": 0.03269687392466752,
+      "xcheck_s11_implied_single_run": 0.05176493102484749
+    },
+    "400k": {
+      "pol_noise": 0.00750695337311934,
+      "s11_rel_noise": 0.033894598406401744,
+      "runtime_min_mean": 46.46666666666666,
+      "runtime_min_range": [
+        41.14333333333333,
+        51.641666666666666
+      ],
+      "xcheck_pol_rms_mean_vs_900k": 0.004780661730854934,
+      "xcheck_pol_implied_single_run": 0.006786289220319569,
+      "xcheck_s11_rel_rms_mean_vs_900k": 0.02043049282044745,
+      "xcheck_s11_implied_single_run": 0.02691777296377758
+    },
+    "900k": {
+      "pol_noise": 0.004744518771462191,
+      "s11_rel_noise": 0.022970603155546204,
+      "runtime_min_mean": 99.99222222222222,
+      "runtime_min_range": [
+        93.43833333333333,
+        108.12833333333333
+      ]
+    }
+  },
+  "fit": {
+    "pol_slope": -0.5435923920732046,
+    "pol_noise_at_1M_from_fit": 0.0045663742505851306,
+    "s11_slope": -0.5268548838698256,
+    "expected_slope": -0.5
+  },
+  "2deg": {
+    "100k": {
+      "pol_noise": 0.010404555177124132,
+      "s11_rel_noise": 0.05069612899366561,
+      "runtime_min_mean": 12.26222222222222,
+      "pol_noise_ratio_vs_1deg": 0.6798176441297185
+    },
+    "200k": {
+      "pol_noise": 0.008155881589233258,
+      "s11_rel_noise": 0.031187086650950668,
+      "runtime_min_mean": 25.24111111111111,
+      "pol_noise_ratio_vs_1deg": 0.6997358442420348
+    }
+  },
+  "5deg": {
+    "100k": {
+      "pol_noise": 0.006856775928928087,
+      "s11_rel_noise": 0.03546407150658204,
+      "runtime_min_mean": 12.26222222222222,
+      "pol_noise_ratio_vs_1deg": 0.44801120076501677
+    },
+    "200k": {
+      "pol_noise": 0.005022216153773378,
+      "s11_rel_noise": 0.021191315785773737,
+      "runtime_min_mean": 25.24111111111111,
+      "pol_noise_ratio_vs_1deg": 0.4308822561825564
+    }
+  }
+}
